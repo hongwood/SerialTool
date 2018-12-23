@@ -61,7 +61,7 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(ui->actionAbout, SIGNAL(triggered()), this, SLOT(about()));
     connect(ui->actionWiki, SIGNAL(triggered()), this, SLOT(openWiki()));
     connect(ui->actionStaysOnTop, SIGNAL(triggered()), this, SLOT(onStaysOnTopTriggered()));
-    connect(ui->actionUpdate, SIGNAL(triggered()), this, SLOT(updateSoftware()));
+    //connect(ui->actionUpdate, SIGNAL(triggered()), this, SLOT(updateSoftware()));
 
     m_timer.start(1000);
 }
@@ -193,11 +193,12 @@ void MainWindow::saveConfig()
 
 void MainWindow::setOptions()
 {
-    /*OptionsBox option(this);
-    option.exec();*/
-    OptionsDialog dialog(m_config, this);
-    connect(&dialog, SIGNAL(settingsUpdated()), this, SLOT(loadSettings()));
-    dialog.exec();
+    //OptionsBox option(this);
+    //option.exec();
+    //OptionsDialog dialog(m_config, this);
+    //connect(&dialog, SIGNAL(settingsUpdated()), this, SLOT(loadSettings()));
+    //dialog.exec();
+    QMessageBox::information(NULL, "提示", "功能待完善", QMessageBox::Yes, QMessageBox::Yes);
 }
 
 void MainWindow::changeRunFlag()
@@ -310,13 +311,13 @@ void MainWindow::about()
 
 void MainWindow::openWiki()
 {
-    QDesktopServices::openUrl(QUrl("https://github.com/gztss/SerialTool/wiki"));
+    QDesktopServices::openUrl(QUrl("https://github.com/hongwood/SerialTool/wiki"));
 }
 
 void MainWindow::updateSoftware()
 {
-    UpdateDialog *dialog = new UpdateDialog(this);
+//    UpdateDialog *dialog = new UpdateDialog(this);
 
-    dialog->exec();
-    dialog->deleteLater();
+//    dialog->exec();
+//    dialog->deleteLater();
 }

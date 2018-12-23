@@ -448,3 +448,24 @@ void TextTRView::saveFile(const QString &fileName, const QString &filter)
         saveText(fileName);
     }
 }
+
+
+void TextTRView::on_pushButton_clicked()
+{
+
+
+}
+
+void TextTRView::on_reset_2_clicked()
+{
+    QTextCodec *code = QTextCodec::codecForName(m_codecName);
+    QByteArray array = code->fromUnicode("#n\n");
+    emit transmitData(array);
+}
+
+void TextTRView::on_reset_clicked()
+{
+    QTextCodec *code = QTextCodec::codecForName(m_codecName);
+    QByteArray array = code->fromUnicode("#c\n");
+    emit transmitData(array);
+}

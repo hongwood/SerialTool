@@ -24,7 +24,7 @@ ViewManager::ViewManager(QString *docPath, QMainWindow *window) :
     // create views
     m_views->append(new TextTRView());
     m_views->append(new TerminalView());
-    m_views->append(new OscilloscopeView());
+   // m_views->append(new OscilloscopeView());
     m_views->append(new FileTransmitView());
 
     m_views->append(loadExtensions("extensions"));

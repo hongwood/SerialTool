@@ -7,8 +7,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>600</width>
-    <height>426</height>
+    <width>800</width>
+    <height>626</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -60,8 +60,8 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>600</width>
-     <height>23</height>
+     <width>800</width>
+     <height>26</height>
     </rect>
    </property>
    <widget class="QMenu" name="menu">
@@ -72,13 +72,6 @@
     <addaction name="actionSave"/>
     <addaction name="separator"/>
     <addaction name="actionClose"/>
-   </widget>
-   <widget class="QMenu" name="menu_2">
-    <property name="title">
-     <string>Tools</string>
-    </property>
-    <addaction name="actionOption"/>
-    <addaction name="separator"/>
    </widget>
    <widget class="QMenu" name="menu_3">
     <property name="title">
@@ -106,7 +99,13 @@
     </property>
     <addaction name="actionWiki"/>
     <addaction name="actionAbout"/>
-    <addaction name="actionUpdate"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>Tools</string>
+    </property>
+    <addaction name="actionOption"/>
+    <addaction name="separator"/>
    </widget>
    <addaction name="menu"/>
    <addaction name="menu_3"/>
@@ -281,11 +280,6 @@
    </property>
    <property name="text">
     <string>Stays On Top</string>
-   </property>
-  </action>
-  <action name="actionUpdate">
-   <property name="text">
-    <string>Update</string>
    </property>
   </action>
  </widget>

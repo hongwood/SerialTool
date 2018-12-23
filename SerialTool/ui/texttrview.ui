@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>540</width>
-    <height>300</height>
+    <width>676</width>
+    <height>419</height>
    </rect>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout_2">
@@ -209,43 +209,88 @@
         </widget>
        </item>
        <item>
-        <layout class="QGridLayout" name="gridLayout_7">
-         <property name="verticalSpacing">
-          <number>3</number>
+        <widget class="QTabWidget" name="tabWidget">
+         <property name="currentIndex">
+          <number>0</number>
          </property>
-         <item row="2" column="1">
-          <widget class="QPushButton" name="sendButton">
-           <property name="enabled">
-            <bool>false</bool>
-           </property>
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
+         <widget class="QWidget" name="tab">
+          <attribute name="title">
+           <string>手动发送</string>
+          </attribute>
+          <layout class="QHBoxLayout" name="horizontalLayout">
+           <item>
+            <layout class="QGridLayout" name="gridLayout_7">
+             <property name="verticalSpacing">
+              <number>3</number>
+             </property>
+             <item row="2" column="1">
+              <widget class="QPushButton" name="sendButton">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>Send</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="0">
+              <widget class="QComboBox" name="historyBox"/>
+             </item>
+             <item row="0" column="0" colspan="2">
+              <widget class="TextEdit" name="textEditTx" native="true">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Ignored">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="focusPolicy">
+                <enum>Qt::StrongFocus</enum>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="tab1">
+          <attribute name="title">
+           <string>快捷命令</string>
+          </attribute>
+          <widget class="QPushButton" name="reset">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>10</y>
+             <width>93</width>
+             <height>28</height>
+            </rect>
            </property>
            <property name="text">
-            <string>Send</string>
+            <string>复位</string>
            </property>
           </widget>
-         </item>
-         <item row="2" column="0">
-          <widget class="QComboBox" name="historyBox"/>
-         </item>
-         <item row="0" column="0" colspan="2">
-          <widget class="TextEdit" name="textEditTx" native="true">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Preferred" vsizetype="Ignored">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
+          <widget class="QPushButton" name="reset_2">
+           <property name="geometry">
+            <rect>
+             <x>110</x>
+             <y>10</y>
+             <width>131</width>
+             <height>28</height>
+            </rect>
            </property>
-           <property name="focusPolicy">
-            <enum>Qt::StrongFocus</enum>
+           <property name="text">
+            <string>查询信息</string>
            </property>
           </widget>
-         </item>
-        </layout>
+         </widget>
+        </widget>
        </item>
       </layout>
      </widget>

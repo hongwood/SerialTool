@@ -18,8 +18,7 @@ AboutBox::AboutBox(QWidget *parent) :
     ui->label2->setText(
         "<b>SerialTool</b><br>"
         "Version: " SOFTWARE_VERSION " (" BUILD_VERSION ")<br>"
-        "Email: 2269610337@qq.com<br>"
-        "Home Page: <a href=\"https://github.com/gztss/SerialTool\">View Code On GitHub</a><br>"
+        "微传智能科技（常州）有限公司<br>"
         "Build Date: " __DATE__ "<br>" // 编译时间
         COPYRIGHT
     );

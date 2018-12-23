@@ -58,6 +58,14 @@ private slots:
     void setResendInterval(int msc);
     void onHistoryBoxChanged(const QString &string);
 
+
+
+    void on_pushButton_clicked();
+
+    void on_reset_2_clicked();
+
+    void on_reset_clicked();
+
 private:
     enum TextCodec {
         ASCII,
